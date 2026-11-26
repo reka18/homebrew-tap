@@ -1,29 +1,29 @@
 # Homebrew formula for CodeSmith, installing the prebuilt release binaries.
 class Codesmith < Formula
-  desc "Terminal coding agent (a Rust port of OpenCode)"
+  desc "Terminal coding agent, fully local and careful with your machine"
   homepage "https://github.com/reka18/codesmith"
-  version "0.4.1"
+  version "0.5.1"
   license "MIT"
 
   on_macos do
     on_arm do
       url "https://github.com/reka18/codesmith/releases/download/v#{version}/codesmith-#{version}-aarch64-apple-darwin.tar.gz"
-      sha256 "b70a5d3b552195224d1fcfd90bc382ddf9bf28440d430a3d2b26f183b7042456"
+      sha256 "c72d1ed01882841a416dec947554362994251311ad6b5122f0ebc9361178672a"
     end
     on_intel do
       url "https://github.com/reka18/codesmith/releases/download/v#{version}/codesmith-#{version}-x86_64-apple-darwin.tar.gz"
-      sha256 "007b61b109fce45809b46a3201e91323f62984de3b2554eef0b81ae98f908aba"
+      sha256 "84fe593f6b64965dfaa47decef0857b1fd1706d43b4d35bfb8ca4099f093481f"
     end
   end
 
   on_linux do
     on_arm do
       url "https://github.com/reka18/codesmith/releases/download/v#{version}/codesmith-#{version}-aarch64-unknown-linux-musl.tar.gz"
-      sha256 "3028707064e2f79ad97fdd5cd6c537b155aac216bd75ef96af2080f0b48f39bb"
+      sha256 "99aa135d5a8f59860a2f079a59b4e805469d931eb581be1499e3d2f678d1b632"
     end
     on_intel do
       url "https://github.com/reka18/codesmith/releases/download/v#{version}/codesmith-#{version}-x86_64-unknown-linux-musl.tar.gz"
-      sha256 "9d067e076ede8891d9df8710ef60d68d187886c99972f92a65a860b6027fcc4f"
+      sha256 "588121ab2e22afc8c66ea8d334e826ad855868525b0dcf39a323411469674771"
     end
   end
 
