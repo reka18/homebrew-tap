@@ -2,28 +2,28 @@
 class Codesmith < Formula
   desc "Terminal coding agent, fully local and careful with your machine"
   homepage "https://github.com/reka18/codesmith"
-  version "0.6.1"
+  version "0.7.0"
   license "MIT"
 
   on_macos do
     on_arm do
       url "https://github.com/reka18/codesmith/releases/download/v#{version}/codesmith-#{version}-aarch64-apple-darwin.tar.gz"
-      sha256 "43b92f834d085591e81b0cddda616c63697bfb46bb7b469b69f3e8725c6c0043"
+      sha256 "9c90ec565faecfb882ee0ff95cc1877b5ac8883d7d297b2ba41d92135cd91d1c"
     end
     on_intel do
       url "https://github.com/reka18/codesmith/releases/download/v#{version}/codesmith-#{version}-x86_64-apple-darwin.tar.gz"
-      sha256 "fa7c8464c29d969be3fde7a07d27dd56feffff8d4f5295cfc19cd7a3068bbf1e"
+      sha256 "903c4f836d29a65ff612ed4f6f8e27654fecf8d5dd85ca9f02e67ce58cc7932d"
     end
   end
 
   on_linux do
     on_arm do
       url "https://github.com/reka18/codesmith/releases/download/v#{version}/codesmith-#{version}-aarch64-unknown-linux-musl.tar.gz"
-      sha256 "21e04aa1c9ea5d8c414b97a23c560068409080a25d03beaf52a168169d6baaeb"
+      sha256 "b3fd0b515a34d4c02aada7c377ed4892d01bb72bacb8721c2707201d288dcdf7"
     end
     on_intel do
       url "https://github.com/reka18/codesmith/releases/download/v#{version}/codesmith-#{version}-x86_64-unknown-linux-musl.tar.gz"
-      sha256 "f337d0514a044509b791c89497d5db68a463e325ab834b25ce8b31ee4017aa34"
+      sha256 "f608e22ce6215ef81d8dae2f54ea7152ecd0b7fa85e827c3d8ad7364ff585ff2"
     end
   end
 
